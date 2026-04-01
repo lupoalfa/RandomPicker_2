@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_main.xml  ← 입력 화면 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#0D0D0D">
+
+    <!-- 타이틀 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎲 랜덤 추출기"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#F5F5F5"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="최대 숫자를 입력하세요"
+        android:textSize="15sp"
+        android:textColor="#888888"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- 숫자 입력 -->
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:hint="예: 100"
+        android:inputType="number"
+        android:textSize="22sp"
+        android:textColor="#F5F5F5"
+        android:textColorHint="#444444"
+        android:gravity="center"
+        android:background="@drawable/bg_input"
+        android:paddingHorizontal="16dp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- 추출 버튼 -->
+    <Button
+        android:id="@+id/btnPick"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="추출하기"
+        android:textSize="18sp"
+        android:textColor="#0D0D0D"
+        android:textStyle="bold"
+        android:backgroundTint="#E8FF47"
+        android:stateListAnimator="@null"
+        android:elevation="0dp"/>
+
+</LinearLayout>
